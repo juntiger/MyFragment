@@ -34,5 +34,19 @@ public class MainActivity extends AppCompatActivity {
                 getSupportFragmentManager().beginTransaction().replace(R.id.frame, subFragment).commit();
             }
         });
+
+
+    }
+
+    public void changeFragment(int index){
+
+        if(index==0){
+            getSupportFragmentManager().beginTransaction().replace(R.id.frame, subFragment).commit();
+        }else{
+            getSupportFragmentManager().beginTransaction().replace(R.id.frame, mainFragment).commit();
+        }
+
+
+
     }
 }
